@@ -1,0 +1,145 @@
+* {
+	margin: 0;
+	padding: 0;
+	font-family: Gotham, Helvetica Neue, Helvetica, Arial," sans-serif";
+	font-weight: 900;
+	-webkit-font-smoothing: antialiased;
+    text-shadow: 1px 1px 1px rgba(0,0,0,0.004);
+}
+a:link, a:visited {
+	color: inherit;
+	text-decoration: inherit;
+}
+body {
+}
+nav {
+	position: fixed;
+	top:0;
+	left:0;
+	right:0;
+	padding: 1em 0;
+}
+nav ul {
+	text-align: right;
+}
+li {
+	list-style: none;
+	margin: 0 2em;
+}
+nav ul li {
+	display: inline-block;
+}
+html, body, section {
+	height: 100%;
+}
+section {
+	padding: 0 3%;
+	overflow: auto;
+}
+h1 {
+	padding-top: 12%;
+	margin-bottom: .5em;
+	width: 35%;
+	font-size: 4em;
+	letter-spacing: -0.05em;
+}
+h2 {
+	padding-top: 25%;
+	letter-spacing: -0.05em;
+	font-size: 2em;
+}
+p {
+	font-family: Cambria, Hoefler Text, Liberation Serif, Times, Times New Roman, serif;
+	font-weight: 100;
+	line-height: 1.1em;
+	width: 50%;
+	min-width: 20em;
+	letter-spacing: 0em;
+	margin: .5em 0;
+	clear: both;
+}
+.next {
+	margin: 1em auto;
+	font-weight: 100;
+	font-size: 2em;
+}
+.intro {
+	width: 40%;
+	line-height: 1.2em;
+}
+#going #home {
+	background: url(launch.gif);
+	background: -webkit-linear-gradient(left, rgba(255,255,255,0.9) , rgba(255,255,255,0.5)), url(launch.gif);
+	background: -o-linear-gradient(right, rgba(255,255,255,0.9) , rgba(255,255,255,0.5)), url(launch.gif);
+	background: -moz-linear-gradient(right, rgba(255,255,255,0.9) , rgba(255,255,255,0.5)), url(launch.gif);
+	background: linear-gradient(to right, rgba(255,255,255,0.9) , rgba(255,255,255,0.5)), url(launch.gif);
+	background-size: cover;
+	background-attachment: fixed;
+}
+#going #who {
+	background: url(juliet.jpg);
+	background: -webkit-linear-gradient(left, rgba(255,255,255,0.9) , rgba(255,255,255,0.5)), url(juliet.jpg);
+	background: -o-linear-gradient(right, rgba(255,255,255,0.9) , rgba(255,255,255,0.5)), url(juliet.jpg);
+	background: -moz-linear-gradient(right, rgba(255,255,255,0.9) , rgba(255,255,255,0.5)), url(juliet.jpg);
+	background: linear-gradient(to right, rgba(255,255,255,0.9) , rgba(255,255,255,0.5)), url(juliet.jpg);
+	background-size: cover;
+	background-attachment: fixed;	
+}
+#going #where {	
+	background: url(nashville.jpg);
+	background: -webkit-linear-gradient(left, rgba(255,255,255,0.9) , rgba(255,255,255,0.5)), url(nashville.jpg);
+	background: -o-linear-gradient(right, rgba(255,255,255,0.9) , rgba(255,255,255,0.5)), url(nashville.jpg);
+	background: -moz-linear-gradient(right, rgba(255,255,255,0.9) , rgba(255,255,255,0.5)), url(nashville.jpg);
+	background: linear-gradient(to right, rgba(255,255,255,0.9) , rgba(255,255,255,0.5)), url(nashville.jpg);
+	background-size: cover;
+	background-attachment: fixed;
+}
+#going #what {
+	background: url(projects.jpg);
+	background: -webkit-linear-gradient(left, rgba(255,255,255,0.9) , rgba(255,255,255,0.5)), url(projects.jpg);
+	background: -o-linear-gradient(right, rgba(255,255,255,0.9) , rgba(255,255,255,0.5)), url(projects.jpg);
+	background: -moz-linear-gradient(right, rgba(255,255,255,0.9) , rgba(255,255,255,0.5)), url(projects.jpg);
+	background: linear-gradient(to right, rgba(255,255,255,0.9) , rgba(255,255,255,0.5)), url(projects.jpg);
+	background-size: cover;
+	background-attachment: fixed;
+}
+#been #who {
+	background: url(family.jpg);
+	background: -webkit-linear-gradient(left, rgba(255,255,255,0.9) , rgba(255,255,255,0.5)), url(family.jpg);
+	background: -o-linear-gradient(right, rgba(255,255,255,0.9) , rgba(255,255,255,0.5)), url(family.jpg);
+	background: -moz-linear-gradient(right, rgba(255,255,255,0.9) , rgba(255,255,255,0.5)), url(family.jpg);
+	background: linear-gradient(to right, rgba(255,255,255,0.9) , rgba(255,255,255,0.5)), url(family.jpg);
+	background-size: cover;
+	background-attachment: fixed;
+	background-position: top center;
+}
+#been #where {
+	background: url(cleveland.jpg);
+	background: -webkit-linear-gradient(left, rgba(255,255,255,0.9) , rgba(255,255,255,0.5)), url(cleveland.jpg);
+	background: -o-linear-gradient(right, rgba(255,255,255,0.9) , rgba(255,255,255,0.5)), url(cleveland.jpg);
+	background: -moz-linear-gradient(right, rgba(255,255,255,0.9) , rgba(255,255,255,0.5)), url(cleveland.jpg);
+	background: linear-gradient(to right, rgba(255,255,255,0.9) , rgba(255,255,255,0.5)), url(cleveland.jpg);
+	background-size: cover;
+	background-attachment: fixed;
+}
+#been #what {
+	background: url(golf.jpg);
+	background: -webkit-linear-gradient(left, rgba(255,255,255,0.9) , rgba(255,255,255,0.5)), url(golf.jpg);
+	background: -o-linear-gradient(right, rgba(255,255,255,0.9) , rgba(255,255,255,0.5)), url(golf.jpg);
+	background: -moz-linear-gradient(right, rgba(255,255,255,0.9) , rgba(255,255,255,0.5)), url(golf.jpg);
+	background: linear-gradient(to right, rgba(255,255,255,0.9) , rgba(255,255,255,0.5)), url(golf.jpg);
+	background-size: cover;
+	background-attachment: fixed;
+}
+#hawk {
+	margin:0;
+	padding: 0;
+	position: absolute;
+	right: 3%;
+	bottom: 0;
+	width: 10%;;
+}
+.quiet {
+	opacity: .5;
+	font-size: .9em;
+}

@@ -1,0 +1,90 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Untitled Document</title>
+</head>
+
+<body>
+    <h1>JS!</h1>
+    <script type="text/javascript">
+		//Add and multiply!!!!!
+		function add(x,y){
+			return x + y;
+		};
+		function multiply(x,y){
+			return x * y;
+		};
+		console.log(add(multiply(36325,9824),777));
+		
+		
+		//Are the Arrays the same?????????
+		//btw this is built more for versatility not speed. In the event that I know reliably what the data types will be and their formats, say 1 digit numbers or rigidly formated dates I would probably do a join with a weird character separator, then return the boolean for the equality of the two resulting strings..... In this case I don't know what type of values I'll get, so... this.
+		function areArraysSame(x,y){
+				if(x.length !== y.length){
+					return false;
+				}			
+				for(i = 0; i < x.length; i++){
+					if(x[i] !== y[i]){
+						return false;
+					} else if (i === x.length - 1){
+						return true;
+					}
+				}
+			};
+		var a = [0,2,3,3,5,6];
+		var b = [0,2,3,3,5,7];
+		console.log(areArraysSame(a,b));
+		
+		
+		//FUNCTIONS FOR HANGMAN!!!!!!!!!!!!!
+		function pickWord(){
+			var x = ["aristocrat","armadillo","fragrance","dugout","swift","dangerously","flyer","national"]
+			return x[Math.floor(Math.random() * options.length)];
+		}
+		function setupAnswerArray(word){
+			var x = [];
+			for(i = 0; i < word.length; i++){
+				 x[i] = "_";
+			}
+			return x;
+		}
+		function showPlayerProgress(answerArray){
+			alert(answerArray.join(" "));
+		}
+		function getGuess(){
+			var x = prompt("Guess a letter, or click Cancel to stop playing.").toLowerCase();
+			return x;
+		}
+		function updateGameState(guess,word,answerArray){
+			var x = 0;
+			for(i = 0; i < word.length; i++){
+				if(guess === word[i] && answerArray[i] === "_"){
+					answerArray[i] = guess;
+					x += 1;
+				}
+			}
+			return x;
+		}
+		function showAnswerAndCongratulatePlayer(answerArray){
+			//not sure why we wouldn't just use word for argument then we wouldn't have to worry about the join method.
+			alert("Congratulations! The word was " + answerArray.join("") + "!");
+		}
+		
+		//Author's code
+var word = pickWord();
+var answerArray = setupAnswerArray(word); var remainingLetters = word.length;
+while (remainingLetters > 0) { showPlayerProgress(answerArray); var guess = getGuess();
+if (guess === null) {
+break;
+} else if (guess.length !== 1) {
+alert("Please enter a single letter.");
+} else {
+var correctGuesses = updateGameState(guess, word, answerArray);
+  remainingLetters -= correctGuesses; }
+} showAnswerAndCongratulatePlayer(answerArray);
+    </script>
+</body>
+
+</html>
